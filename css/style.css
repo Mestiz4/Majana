@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background-color: #FEFADE;
     font-family: 'Poppins', sans-serif;
@@ -43,13 +47,15 @@ body{
         font-weight: bolder;
         z-index: 2;
         }
-        
 
-    .menu__logo {
+
+        .menu__logo {
         width: 100px;
         margin-top: 1rem;
         float: left;
+        transition: all 0.5s;
     }
+
 
     .menu__list{
         list-style: none;
@@ -67,10 +73,18 @@ body{
     .menu__link{
         text-decoration: none;
         color: white;
+        transition: all 1s;
         text-transform: uppercase;
         margin-left: 50px;
         text-align: left;
 
+    }
+
+
+    .menu__link:hover{
+        text-decoration: underline;
+        opacity: 50%;
+    
     }
 
     #WeAreColombia{
@@ -111,13 +125,39 @@ body{
         
     }
 
+    .grid_flavor:before{
+        content:"¡HOLA!";
+        color: white;
+        position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: red; 
+        transform: translateY(-100%);
+        transition: all 1s;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+      }
+      
+      .grid_flavor:hover:before{
+        transform:translateY(0%);  
+      }
+
     .grid_flavor{
         border-radius: 1rem;
+        transition: all 1s;
+    }
+
+    .grid_flavor:hover{
+        margin-top: -1rem;
     }
 
     .popular{
         border-radius: 1rem;
     }
+
 
     .popular_container{
         display: grid;
@@ -131,18 +171,37 @@ body{
     }
 
     
+        
+
+    .slide-popular--text:hover{
+        opacity: 80%;
+
+    }
+
+    .slide-popular--text2:hover{
+        opacity: 80%;
+
+    }
+
+
+    
     
     .slide-popular--text{
         background-color: #85BC25;
         color: #FEFADE;
         padding: 5rem;
-        
+        text-decoration: none;
+        text-align: center;
+        transition: all 1s;
     }
+        
 
     .slide-popular--text2{
         background-color: #8F2565;
         color: #FEFADE;
         padding: 5rem;
+        text-align: center;
+        transition: all 1s;
     }
 
    
@@ -197,26 +256,55 @@ body{
 
     .products--pulp{
         background-image: url(../imagenes/pulp_products.jpg);
+        transition: all 1s;
+    }
+
+    .products--pulp:hover{
+        margin-top: -1rem;
     }
 
     .products--smooties{
         background-image: url(../imagenes/smooties_products.jpg);
+        transition: all 1s;
+    }
+    .products--smooties:hover{
+        margin-top: -1rem;
     }
 
     .products--coffee{
         background-image: url(../imagenes/coffee_products.jpg);
+        transition: all 1s;
+    }
+
+    .products--coffee:hover{
+        margin-top: -1rem;
     }
 
     .products--babyFood{
         background-image: url(../imagenes/babyfood_products.jpg);
+        transition: all 1s;
+    }
+
+    .products--babyFood:hover{
+        margin-top: -1rem;
     }
 
     .products--tubers{
         background-image: url(../imagenes/tubers_products.jpg);
+        transition: all 1s;
+    }
+
+    .products--tubers:hover{
+        margin-top: -1rem;
     }
 
     .products--precooked{
         background-image: url(../imagenes/precooked_products.jpg);
+        transition: all 1s;
+    }
+
+    .products--precooked:hover{
+        margin-top: -1rem;
     }
 
 /** products end */
