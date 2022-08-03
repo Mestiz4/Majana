@@ -125,21 +125,7 @@ body{
         
     }
 
-    .grid_flavor:before{
-        content:"¡HOLA!";
-        color: white;
-        position:absolute;
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
-        background-color: red; 
-        transform: translateY(-100%);
-        transition: all 1s;
-        display:flex;
-        align-items:center;
-        justify-content: center;
-      }
+    
       
       .grid_flavor:hover:before{
         transform:translateY(0%);  
