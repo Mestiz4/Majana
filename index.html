@@ -6,36 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majana</title>
-    <!-- font awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- SASS -->
+    <link rel="stylesheet" href="css/custom.css">
     <!-- animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--css-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,500;1,700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="row">
-        <div class="container container-header">
-        <div class="menu">
-        <nav>
-            <a href="index.html">
-                <img class="menu__logo animate__animated animate__pulse" src="imagenes/majana-logo.png" alt="main logo">
-            </a>
-            <ul class="menu__list">
-                <li><a class="menu__link" href="us.html">about us</a></li>
-                <li><a class="menu__link" href="products.html">Products</a></li>
-                <li><a class="menu__link" href="stores.html">Stores</a></li>
-                <li><a class="menu__link" href="contact.html">Contact</a></li>
-            </ul>
+                
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary" p-10>
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img class="menu__logo animate__animated animate__pulse" width="100px" src="imagenes/majana-logo.png" alt="main logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="us.html">About us</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="products.html" role="button">
+            Products
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+        
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="stores.html" role="button">Stores</a>
+          </li>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html" role="button">Contact</a>
+      </li>
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn text-primary bg-white btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
         </nav>
     </div>
 </div>
@@ -53,40 +75,40 @@
       </svg>
 </section>
 <section>
-    <div class="flavor-container">
     <div class="container">
-        
-    <h2>new pulp fruit flavors</h2>
-    <div class="grid_flavors_container">
-<div><img class="grid_flavor" src="imagenes/sabor-mango.jpg" alt="mango"></div>
-<div><img class="grid_flavor" src="imagenes/sabor-tamarindo.jpg" alt="tamarindo"></div>
-<div><img class="grid_flavor" src="imagenes/sabor-feijoa.jpg" alt="feijoa"></div>
-</div>
+      <h2>new pulp fruit flavors</h2>
+      <div class=" row mt-5">
+        <div class=" col">
+          <img  src="imagenes/sabor-mango.jpg" width="300px" alt="mango">
+        </div>
+        <div class="col">
+          <div><img  src="imagenes/sabor-tamarindo.jpg" width="300px" alt="tamarindo"></div>
+        </div>
+        <div class="col">
+          <div><img  src="imagenes/sabor-feijoa.jpg" width="300px" alt="feijoa"></div>
+        </div>
+      </div>
+
 </div>
 </div>
 </div>
 </section>
 <section>
     <div class="container">
-    <h2>Popular</h2>
-    <div class="popular_container">
-        <div class="slide-popular--text">
+    <h2 class="mt-5">Popular</h2>
+    <div class="row mt-5">
+        <div class="col">
         <h3>Smooties</h3> 
         <p>A delicious mix</p>
-    </div>
-        <img src="imagenes/smooties.jpg" alt="">
-        <div class="slide-popular--text2">
+        </div>
+    <div class="col">
         <h3>Coffee</h3>
         <p>The best flavor in the world</p>
     </div>
-    <img class="slide-popular--img" src="imagenes/coffee.jpg" alt="">
-    
-    
-        <div class="slide-popular--text">
+    <div class="col">
         <h3>Baby Food</h3>
         <p>Nature makes us happy</p>
     </div>
-    <img class="slide-popular--img" src="imagenes/baby-food.jpg" alt="">
 </div>
     
 </div>
@@ -100,9 +122,10 @@
       </svg>
     <footer>
         <div class="container">
-            <div class="row row-footer">
-                
+            <div class="row">
+              <div class="col text-center">
                 <p>hi@wearemajana.com</p>
+              </div>
                 
                 <div class="col">
         <a href="#" class="socialmedia"><img  src="imagenes/facebook.png" width="50px" height="50px" alt="facebook"></a>
@@ -114,6 +137,6 @@
     </div>
     </footer>
     <!-- footer all -->
-    
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
