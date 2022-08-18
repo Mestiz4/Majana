@@ -15,6 +15,98 @@ MEDIA QUERIES
     z-index: -3;
   }
 }
+.container-products {
+  margin-top: -100px;
+}
+
+.h2-pulp {
+  width: 18rem;
+  height: 18rem;
+  color: #FEFADE;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../imagenes/pulp_products.jpg");
+  background-size: cover;
+  text-shadow: 2px 2px 2px rgba(14, 14, 14, 0.6588235294);
+  border-radius: 2rem;
+  font-weight: 700 !important;
+  padding-top: 1rem;
+}
+
+.h2-smooties {
+  width: 18rem;
+  height: 18rem;
+  color: #FEFADE;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../imagenes/smooties_products.jpg");
+  background-size: cover;
+  text-shadow: 2px 2px 2px rgba(14, 14, 14, 0.6588235294);
+  border-radius: 2rem;
+  font-weight: 700 !important;
+  padding-top: 1rem;
+}
+
+.h2-coffee {
+  width: 18rem;
+  height: 18rem;
+  color: #FEFADE;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../imagenes/coffee_products.jpg");
+  background-size: cover;
+  text-shadow: 2px 2px 2px rgba(14, 14, 14, 0.6588235294);
+  border-radius: 2rem;
+  font-weight: 700 !important;
+  padding-top: 1rem;
+}
+
+.h2-babyFood {
+  width: 18rem;
+  height: 18rem;
+  color: #FEFADE;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../imagenes/babyfood_products.jpg");
+  background-size: cover;
+  text-shadow: 2px 2px 2px rgba(14, 14, 14, 0.6588235294);
+  border-radius: 2rem;
+  font-weight: 700 !important;
+  padding-top: 1rem;
+}
+
+.h2-tubers {
+  width: 18rem;
+  height: 18rem;
+  color: #FEFADE;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../imagenes/tubers_products.jpg");
+  background-size: cover;
+  text-shadow: 2px 2px 2px rgba(14, 14, 14, 0.6588235294);
+  border-radius: 2rem;
+  font-weight: 700 !important;
+  padding-top: 1rem;
+}
+
+.h2-precooked {
+  width: 18rem;
+  height: 18rem;
+  color: #FEFADE;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../imagenes/precooked_products.jpg");
+  background-size: cover;
+  text-shadow: 2px 2px 2px rgba(14, 14, 14, 0.6588235294);
+  border-radius: 2rem;
+  font-weight: 700 !important;
+  padding-top: 1rem;
+}
+
+.img-aboutus {
+  border-radius: 3rem;
+}
+
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

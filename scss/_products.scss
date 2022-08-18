@@ -1,0 +1,27 @@
+.container-products{
+    margin-top: -100px;
+}
+
+.h2-pulp{
+    @include Products(url("../imagenes/pulp_products.jpg"))
+}
+
+.h2-smooties{
+    @include Products(url("../imagenes/smooties_products.jpg"))
+}
+
+.h2-coffee{
+    @include Products(url("../imagenes/coffee_products.jpg"))
+}
+
+.h2-babyFood{
+    @include Products(url("../imagenes/babyfood_products.jpg"))
+}
+
+.h2-tubers{
+    @include Products(url("../imagenes/tubers_products.jpg"))
+}
+
+.h2-precooked{
+    @include Products(url("../imagenes/precooked_products.jpg"))
+}

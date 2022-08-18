@@ -1,0 +1,13 @@
+@mixin Products($background-image){
+    width: 18rem;
+    height: 18rem;
+    color: map-get($colors, color-cream);
+    text-align: center;
+    text-transform: uppercase;
+    background-image: $background-image;
+    background-size: cover;
+    text-shadow: 2px 2px 2px #0e0e0ea8;
+    border-radius: 2rem;
+    font-weight: 700 !important;
+    padding-top: 1rem;
+}
