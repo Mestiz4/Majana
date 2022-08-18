@@ -1,5 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,500;1,700&family=Roboto&display=swap");
+footer {
+  background-color: #8F2565;
+  color: #FEFADE;
+  padding-bottom: 1rem;
+}
+
+/*============================================
+MEDIA QUERIES
+==============================================*/
+@media (max-width: 1000px) {
+  .carousel-majana {
+    margin-top: -130px;
+    z-index: -3;
+  }
+}
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -7,20 +22,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
+  --bs-color-purple: #8F2565;
+  --bs-color-cream: #FEFADE;
+  --bs-color-green: #85BC25;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
@@ -108,7 +112,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .newproducts-green, .newproducts-purple, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -133,11 +137,11 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
+h3, .newproducts-green, .newproducts-purple, .h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
-  h3, .h3 {
+  h3, .newproducts-green, .newproducts-purple, .h3 {
     font-size: 1.75rem;
   }
 }
@@ -10759,31 +10763,25 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#WeAreColombia {
-  background-image: url("../imagenes/colombia_2.jpg");
-  height: 500px;
-  background-position-y: 1px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -270px;
-  padding-top: 250px;
-  color: #FEFADE;
-  text-shadow: 2px 2px 3px black;
-  font-weight: 800;
-  padding-left: 60px;
-}
-
 body {
   background-color: #FEFADE;
 }
 
-footer {
-  background-color: #8F2565;
-  color: #FEFADE;
+h3, .newproducts-green, .newproducts-purple, .h3 {
+  font-weight: 500;
 }
 
-.waves-2 {
-  margin-top: -180px;
+.newproducts-purple {
+  color: #8F2565;
+}
+
+.newproducts-green {
+  color: #85BC25;
+}
+
+.carousel-majana {
+  margin-top: -270px;
+  z-index: -3;
 }
 
 /*# sourceMappingURL=custom.css.map */
