@@ -25,3 +25,9 @@
 .h2-precooked{
     @include Products(url("../imagenes/precooked_products.jpg"))
 }
+
+@media (max-width: 576px){
+    .container-products{
+        margin-top: 0;
+    }
+}

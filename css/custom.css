@@ -6,15 +6,6 @@ footer {
   padding-bottom: 1rem;
 }
 
-/*============================================
-MEDIA QUERIES
-==============================================*/
-@media (max-width: 1000px) {
-  .carousel-majana {
-    margin-top: -130px;
-    z-index: -3;
-  }
-}
 .container-products {
   margin-top: -100px;
 }
@@ -103,10 +94,24 @@ MEDIA QUERIES
   padding-top: 1rem;
 }
 
+@media (max-width: 576px) {
+  .container-products {
+    margin-top: 0;
+  }
+}
 .img-aboutus {
   border-radius: 3rem;
+  margin-right: 2rem;
 }
 
+@media (max-width: 576px) {
+  .mapouter {
+    width: 100%;
+  }
+  .row-stores {
+    margin: 0;
+  }
+}
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -204,7 +209,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .newproducts-green, .newproducts-purple, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -229,11 +234,11 @@ h2, .h2 {
   }
 }
 
-h3, .newproducts-green, .newproducts-purple, .h3 {
+h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
-  h3, .newproducts-green, .newproducts-purple, .h3 {
+  h3, .h3 {
     font-size: 1.75rem;
   }
 }
@@ -10855,25 +10860,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: #FEFADE;
+/*============================================
+MEDIA QUERIES
+==============================================*/
+@media (max-width: 820px) {
+  .h2-wrap {
+    width: 100%;
+  }
 }
-
-h3, .newproducts-green, .newproducts-purple, .h3 {
-  font-weight: 500;
-}
-
-.newproducts-purple {
-  color: #8F2565;
-}
-
-.newproducts-green {
-  color: #85BC25;
-}
-
-.carousel-majana {
-  margin-top: -270px;
-  z-index: -3;
+@media (max-width: 576px) {
+  .col {
+    flex: none !important;
+  }
+  .col .img-aboutus {
+    margin: 0;
+  }
+  .col .h2-wrap {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

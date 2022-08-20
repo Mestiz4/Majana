@@ -2,36 +2,34 @@
 
 @import "variables";
 @import "footer";
-@import "mediaqueries";
 @import "mixin";
 @import "products";
 @import "aboutUs";
+@import "stores";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
-body{
-    background-color:#FEFADE;
+/*============================================
+MEDIA QUERIES
+==============================================*/
+@media (max-width: 820px){
+    .h2-wrap{
+        width: 100%;
+       }
 }
 
-h3{
-    font-weight: 500;
-}
+@media (max-width: 576px){
+    .col{
+        flex: none !important;
 
-.newproducts-purple{
-@extend h3;
-color: map-get($colors, color-purple);
-}
+        .img-aboutus{
+           margin: 0; 
+        }
 
-.newproducts-green{
-    @extend h3;
-    color: map-get($colors, color-green);
+       .h2-wrap{
+        width: 100%;
+       }
+
     }
-
-
-
-.carousel-majana{
-    margin-top: -270px;
-    z-index: -3;
 }
-
